@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/jaypi4c.gpg] https://jaypi4c.github.io/ppa/ubuntu ./

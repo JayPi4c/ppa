@@ -1,0 +1,28 @@
+Package: helloworld
+Version: 1.0
+Architecture: amd64
+Maintainer: JayPi4c <jonas.jp4c@gmail.com>
+Installed-Size: 20
+Depends: libc6
+Filename: ./helloworld-1.0.0_amd64.deb
+Size: 2814
+MD5sum: 8a60a523e6d73b0767f9fcfe91fc3974
+SHA1: 55cb7ea5d5a61daccbe770ae77a12b8a7f985766
+SHA256: 49d2984244e4e95f5380803975766a838bd16a26adc6d5ee143947e25a866b0d
+Homepage: https://github.com/jaypi4c
+Description: Example helloworld! This is an example application named helloworld for a Debian packaging tutorial.
+
+Package: helloworld
+Version: 1.0.1
+Architecture: amd64
+Maintainer: JayPi4c <jonas.jp4c@gmail.com>
+Installed-Size: 20
+Depends: libc6
+Filename: ./helloworld-1.0.1_amd64.deb
+Size: 2832
+MD5sum: 3060d0c1d6c4945f3adbbe29af5aa6f9
+SHA1: 8398a1f86a885fb5d382527819dc626492d0a172
+SHA256: b687ea80e4b64120f7f3911ae19be3d5a6b3a066f02a8a3b35b63d80cfb7fe7d
+Homepage: https://github.com/jaypi4c
+Description: Example helloworld! This is an example application named helloworld for a Debian packaging tutorial.
+
