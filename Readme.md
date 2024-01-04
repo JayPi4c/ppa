@@ -4,6 +4,10 @@ or
 
 https://github.com/marketplace/actions/github-pages-apt-repo
 
+also
+
+https://earthly.dev/blog/creating-and-hosting-your-own-deb-packages-and-apt-repo/
+
 
 ```bash
 curl -s --compressed "https://jaypi4c.github.io/ppa/ubuntu/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/jaypi4c.gpg >/dev/null
