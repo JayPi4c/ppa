@@ -46,6 +46,9 @@ gpg --default-key "${EMAIL}" --clearsign -o - Release > InRelease
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/my_ppa.gpg] https://${GITHUB_USERNAME}.github.io/my_ppa ./" > my_list_file.list
 ```
 
+9. Make sure to activate GitHub Pages in the repository and set the `deployment source` to `GitHub Actions`.
+
+
 If you want to change names of files or folders, make sure to change them in the whole repository.
 
 
