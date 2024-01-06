@@ -11,13 +11,15 @@ sudo curl -s --compressed -o /etc/apt/sources.list.d/jaypi4c.list "https://jaypi
 sudo apt update
 ```
 
-
-
 # Creating a PPA hosted with GitHub Pages
 
 This repository is used to host a PPA for all my projects. If a `.deb` file is pushed to this repository, it will be automatically added to the PPA.
 
 To set up this repository, the following steps are required:
+
+Make sure to have the following environment variables set:
+- `EMAIL`: The email address that is used for the GPG key
+- `GITHUB_USERNAME`: The username of the GitHub account that is used to host the PPA
 1. Create a new repository on GitHub
 2. Create a new GPG key with `gpg --full-gen-key` (RSA, 4096 bits, no expiry date) (note: currently it's not supported to have a passphrase on the key)
 3. Export the private key using `gpg --export-secret-keys "${EMAIL}" | base64 > private.key`
@@ -55,5 +57,5 @@ This tutorial combines information from the following sources:
 
 ## Adding a new package to the PPA
 
-This repository is configured to automatically deploy all `.deb` files that are pushed to the `main` branch. To add a new package to the PPA, simply push the `.deb` file to the `main` branch and it will be automatically added to the PPA. This can be done automatically using GitHub Actions. Refer to the following repository for an example:
+This repository is configured to automatically deploy all `.deb` files that are pushed to the `ubuntu` folder in the `main` branch. This can be done automatically using GitHub Actions. Refer to the following repository for an example:
 - https://github.com/JayPi4c/ExampleDebianPackage
