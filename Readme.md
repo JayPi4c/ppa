@@ -1,13 +1,9 @@
-https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
+# Custom PPA for personal projects
 
-or
+This repository is used to host a PPA for all my projects. If a `.deb` file is pushed to this repository, it will be automatically added to the PPA.
 
-https://github.com/marketplace/actions/github-pages-apt-repo
 
-also
-
-https://earthly.dev/blog/creating-and-hosting-your-own-deb-packages-and-apt-repo/
-
+## Adding the PPA to your system
 
 ```bash
 curl -s --compressed "https://jaypi4c.github.io/ppa/ubuntu/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/jaypi4c.gpg >/dev/null
